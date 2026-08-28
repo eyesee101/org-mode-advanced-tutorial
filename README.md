@@ -1,71 +1,71 @@
 
 # Table of Contents
 
--   [O that way madness lies, let me shun that](#org2dd015a)
-    -   [A Brief Note On This Guide](#org0a81094)
--   [Advanced Capture Templates](#org4d7742c)
-    -   [Template Files](#org39f283f)
-        -   [Moving a Simple Template String into a File](#org4a939eb)
-        -   [Moving a Complex Template String into a File](#orge343644)
-    -   [Nested Capture Templates](#orgebcf015)
-    -   [Interactive Capture Templates](#org75932d7)
-        -   [Book Template](#orgd1d6cdc)
-        -   [Book Template Explained](#org7c6c273)
-        -   [Creating a New Book](#org58bc16d)
--   [Pretty HTML Exporting](#orgfe16181)
-    -   [The Problem](#org39bef3f)
-    -   [The Solution](#org6e0fe65)
-    -   [Before and After](#orge23504f)
--   [Professional Looking PDF Exports](#org82b2666)
-    -   [Install LaTeX](#org13af1b5)
-    -   [Configure Emacs for LaTeX](#org4938f2d)
-    -   [Initial Org Doc Setup](#org100fbfc)
-    -   [The Latex Setup File](#orgd7ad8f0)
--   [Presenting with Org Mode](#orgfcc7e99)
-    -   [How This All Works](#orga302bb0)
-    -   [Begun, the Reveal Wars Have!](#org593ae4a)
-    -   [Org Re Reveal Configuration](#orgcc7fdec)
-    -   [Creating a Basic Presentation](#orgac325f5)
--   [Org Roam](#org1f54eaf)
-    -   [An Introduction To Crafting A 2nd Brain](#org7494954)
-        -   [What are we even talking about?](#org607cdc3)
-        -   [Who would ever use this?](#orgbb3f8a9)
-        -   [Real use cases](#orgade6257)
-    -   [Core Concepts Explained](#org6aa7b3a)
-        -   [Terminology](#orgf562a5d)
-            -   [Nodes](#org02b360d)
-            -   [Links](#orgd5f5e4d)
-            -   [Backlinks](#orgc75800e)
-        -   [File management](#orgc011b0b)
-    -   [Basic Configuration](#orgd6f5eea)
-    -   [Basic Configuration Explained](#org2be4b24)
-        -   [`C-c n f` - Find a node](#orgdb06e94)
-        -   [`C-c n i` - Insert a node](#org303e7a2)
-        -   [`C-c C` - Open a capture template](#org5e5c711)
-        -   [`C-c n l` - Show backlinks](#orge63f0e4)
-        -   [`C-c n t` - Add a tag to filetags, NOT a headline](#org65e9ec8)
-        -   [`C-c n o` - Create a node at a headline](#org06d8423)
-        -   [`C-c n a` - Create an alias](#org18a293f)
-        -   [`C-c n r` - Grab random node](#org70ae7ee)
-    -   [Org Roam Capture Templates](#org416894f)
-        -   [Capture Template Example](#org6101552)
-        -   [Default Capture Template Syntax Explained](#org97fc32d)
-        -   [Advanced Capture Template Syntax Explained](#orgdcdfba3)
-    -   [Org Roam UI](#orgc997bc7)
-        -   [Basic Configuration](#org3d97074)
-        -   [Awesome Examples](#orga4f4d98)
--   [Farewell](#org982dcbf)
+-   [O that way madness lies, let me shun that](#org6499abc)
+    -   [A Brief Note On This Guide](#orgb82ffce)
+-   [Advanced Capture Templates](#org7a8cb29)
+    -   [Template Files](#org3571f84)
+        -   [Moving a Simple Template String into a File](#org99a8b8a)
+        -   [Moving a Complex Template String into a File](#org36c2060)
+    -   [Nested Capture Templates](#orgafd6bb3)
+    -   [Interactive Capture Templates](#orgfe075f0)
+        -   [Book Template](#org4b5d1c2)
+        -   [Book Template Explained](#org2b57a66)
+        -   [Creating a New Book](#orga3638cc)
+-   [Pretty HTML Exporting](#org16ec621)
+    -   [The Problem](#orge9d1494)
+    -   [The Solution](#org812d910)
+    -   [Before and After](#org02b0452)
+-   [Professional Looking PDF Exports](#orgc2732d5)
+    -   [Install LaTeX](#org38c539d)
+    -   [Configure Emacs for LaTeX](#orgd60121c)
+    -   [Initial Org Doc Setup](#org7e18578)
+    -   [The Latex Setup File](#org692cf06)
+-   [Presenting with Org Mode](#orgb2dc896)
+    -   [How This All Works](#orgbfae77f)
+    -   [Begun, the Reveal Wars Have!](#orge320897)
+    -   [Org Re Reveal Configuration](#org09c3c05)
+    -   [Creating a Basic Presentation](#orge601c7c)
+-   [Org Roam](#orgfaa454d)
+    -   [An Introduction To Crafting A 2nd Brain](#org4ad2e72)
+        -   [What are we even talking about?](#orgc7b3055)
+        -   [Who would ever use this?](#org99c4ae8)
+        -   [Real use cases](#org8c70234)
+    -   [Core Concepts Explained](#org6d62e7d)
+        -   [Terminology](#orge3b3354)
+            -   [Nodes](#orgf56c053)
+            -   [Links](#orgc9a0c8f)
+            -   [Backlinks](#org0531827)
+        -   [File management](#org4407d3a)
+    -   [Basic Configuration](#org681bade)
+    -   [Basic Configuration Explained](#org5bac22f)
+        -   [`C-c n f` - Find a node](#orgba883d2)
+        -   [`C-c n i` - Insert a node](#orgc792b6a)
+        -   [`C-c C` - Open a capture template](#org7f7a4c7)
+        -   [`C-c n l` - Show backlinks](#org2d3529a)
+        -   [`C-c n t` - Add a tag to filetags, NOT a headline](#orgc997194)
+        -   [`C-c n o` - Create a node at a headline](#org6325ec4)
+        -   [`C-c n a` - Create an alias](#orgc3aa688)
+        -   [`C-c n r` - Grab random node](#org2a5d9cc)
+    -   [Org Roam Capture Templates](#org275e2a6)
+        -   [Capture Template Example](#org4371d84)
+        -   [Default Capture Template Syntax Explained](#org05c06f7)
+        -   [Advanced Capture Template Syntax Explained](#org92f790f)
+    -   [Org Roam UI](#orgadac128)
+        -   [Basic Configuration](#org2b95159)
+        -   [Awesome Examples](#org5c7269a)
+-   [Farewell](#orgf1a4256)
 
 
 
-<a id="org2dd015a"></a>
+<a id="org6499abc"></a>
 
 # O that way madness lies, let me shun that
 
 Welcome to the advanced Org Mode features guide. This is a walk-through for Org Mode users who are tired of the weak stuff and are looking for something a little stronger. Here you will find more complex examples than in your typical Org Mode primer. This guide covers bigger and badder capture templates, a variety of export options, and a breakdown of Org Roam designed to turn anyone into a note taking maniac. But hey, let's face it, if you're here it's because you're already an Org Mode addict like me. On that note, let's get to it.
 
 
-<a id="org0a81094"></a>
+<a id="orgb82ffce"></a>
 
 ## A Brief Note On This Guide
 
@@ -74,21 +74,21 @@ This guide IS NOT for new Emacs users or for new Org Mode users. If you are new 
 Also, each section of this guide is self contained. There will be several sections that are similar, but that is done on purpose. Every major section can stand on its own. Which means you don't have to read through this entire guide just to understand something at the end. Skip to whatever you need and don't worry that you are missing some obscure step from five sections previous.
 
 
-<a id="org4d7742c"></a>
+<a id="org7a8cb29"></a>
 
 # Advanced Capture Templates
 
 It is fitting that we start here. After all, capture templates are a large part of what makes Org Mode so damn useful. However, the more templates you create, the more cluttered everything becomes. You configuration file becomes littered with formatting strings and your capture template starts to become unreadable. But we can fix all that.
 
 
-<a id="org39f283f"></a>
+<a id="org3571f84"></a>
 
 ## Template Files
 
 As your capture templates become more complex over time, working with them can be difficult. The string that defines the template can only be so long before it becomes completely unreadable. For example, a template string with several headlines, tags, a list, and some text could be 100+ characters long. The solution is to abstract out the template itself into a separate file for easier modification.
 
 
-<a id="org4a939eb"></a>
+<a id="org99a8b8a"></a>
 
 ### Moving a Simple Template String into a File
 
@@ -121,7 +121,7 @@ And the corresponding entry in the template file:
     ** %? %^g
 
 
-<a id="orge343644"></a>
+<a id="org36c2060"></a>
 
 ### Moving a Complex Template String into a File
 
@@ -166,7 +166,7 @@ And the corresponding template file.
 By breaking it out like this suddenly the template becomes much easier to read. No need for `\n` or extra spaces cluttering up things. Now, everything is cleanly organized in an Org file.
 
 
-<a id="orgebcf015"></a>
+<a id="orgafd6bb3"></a>
 
 ## Nested Capture Templates
 
@@ -206,12 +206,13 @@ You would still invoke the capture template as usual, however, instead of seeing
 This is a much cleaner way of organizing things because you aren't presented with every option all the time. Here's how this looks in practice:
 
 **Opening the capture templates**
-<img src="https://github.com/james-stoup/org-mode-advanced-tutorial/blob/main/images/root-capture-templates.png" alt="Opening the capture templates" style="width:75%; height:auto;">
+![Opening the capture templates](images/root-capture-templates.png)
 
 **Opening the sub capture templates**
-<img src="https://github.com/james-stoup/org-mode-advanced-tutorial/blob/main/images/sub-capture-templates.png" alt="Opening the sub capture templates" style="width:75%; height:auto;">
+![Opening a sub capture template](images/sub-capture-templates.png)
 
-<a id="org75932d7"></a>
+
+<a id="orgfe075f0"></a>
 
 ## Interactive Capture Templates
 
@@ -227,7 +228,7 @@ But more than just having different templates, we want the templates to prompt t
 When a new book entry is created, first Org loads the template definition located in `~/org/templates/suggestion-book.org`. Once the record is complete, it gets saved into `~/org/suggested-media/bookshelf.org`. Let's look at the template file to see what is actually happening.
 
 
-<a id="orgd1d6cdc"></a>
+<a id="org4b5d1c2"></a>
 
 ### Book Template
 
@@ -242,14 +243,14 @@ Here is what that template file looks like:
     :END:                               ;; 7
                                         ;; 8
     %?                                  ;; 9
-    *** Review                          ;; 10
+    *** Review                         ;; 10
 
 There are three different components at work here: basic Org Mode syntax, user defined variables, and finally references to those user defined variables. Now the basic syntax you know already. The `** TODO`, `:PROPERTIES:`, etc. all operate as usual. However the other two are more tricky.
 
-Notice that the `%^{title}`, `%^{author}`, and `source` fields are special variables that have been defined by the user. These variables tell Org Mode to interactively ask the user for input once the capture template has been activated. Then once those variables have been capture, they can be placed within the document. In this case the `%^{title}` and `%^{author}` are both going to go into the `:PROPERTIES` drawer, but they are also going to be copied into the `** TODO` line. The first value is the title of the book followed by the author of the book, with a dash to separate them. Isn't that clever?
+Notice that the `%^{title}`, `%^{author}`, and `%^{source}` fields are special variables that have been defined by the user. These variables tell Org Mode to interactively ask the user for input once the capture template has been activated. Then once those variables have been capture, they can be placed within the document. In this case the `%^{title}` and `%^{author}` are both going to go into the `:PROPERTIES` drawer, but they are also going to be copied into the `** TODO` line. The first value is the title of the book followed by the author of the book, with a dash to separate them. Isn't that clever?
 
 
-<a id="org7c6c273"></a>
+<a id="org2b57a66"></a>
 
 ### Book Template Explained
 
@@ -276,7 +277,7 @@ For clarity we are going to go through the template line by line, explaining how
 **line 10** - Last, but not least, there a heading for you to write a review once you've finished your book.
 
 
-<a id="org58bc16d"></a>
+<a id="orga3638cc"></a>
 
 ### Creating a New Book
 
@@ -295,39 +296,34 @@ Let's see how this works in practice. Assuming you have copied the above code in
 You have now saved your first book entry.
 
 **Adding a tag**
-
-<img src="https://github.com/james-stoup/org-mode-advanced-tutorial/blob/main/images/fantasy-tag.png" alt="Adding a tag" style="width:75%; height:auto;">
+![Adding a tag](images/fantasy-tag.png)
 
 **Adding the title**
-
-<img src="https://github.com/james-stoup/org-mode-advanced-tutorial/blob/main/images/book-title.png" alt="Adding the title" style="width:75%; height:auto;">
+![Adding the title](images/book-title.png)
 
 **Adding the author**
-
-<img src="https://github.com/james-stoup/org-mode-advanced-tutorial/blob/main/images/book-author.png" alt="Adding the author" style="width:75%; height:auto;">
+![Adding the author](images/book-author.png)
 
 **Adding the source**
-
-<img src="https://github.com/james-stoup/org-mode-advanced-tutorial/blob/main/images/book-source.png" alt="Adding the source" style="width:75%; height:auto;">
+![Adding the source](images/book-source.png)
 
 **Editing the complete book entry**
+![Adding the complete book](images/new-book-capture.png)
 
-<img src="https://github.com/james-stoup/org-mode-advanced-tutorial/blob/main/images/new-book-capture.png" alt="Editing the complete book entry" style="width:75%; height:auto;">
 
-
-<a id="orgfe16181"></a>
+<a id="org16ec621"></a>
 
 # Pretty HTML Exporting
 
 
-<a id="org39bef3f"></a>
+<a id="orge9d1494"></a>
 
 ## The Problem
 
 I frequently find a need to export some chunk of org data and either print it or display it for a non org user to view. In these situations I would like to make it pretty, but I also don't want to spend an excessive amount of time configuring things. Realistically, I'd just like a "pretty print" option that I don't have to think about.
 
 
-<a id="org6e0fe65"></a>
+<a id="org812d910"></a>
 
 ## The Solution
 
@@ -344,7 +340,7 @@ Let's go over what each of these extra options actually do. Before we start thou
 But in the case above, `num:nil` tells org export not to include numbers in the exported sections. If you want your headings numbered you can remove that. The `H:4` setting sets the headlive level for export as a headline. Everything after that number gets treated differently. This is useful for minimizing the size of your Table of Contents.
 
 
-<a id="orge23504f"></a>
+<a id="org02b0452"></a>
 
 ## Before and After
 
@@ -353,27 +349,23 @@ I find this simple export trick so handy, I used it quite frequently when writin
 However, to speed things along, I'm going to show you a few snippets of what this document would look like with and without this enhancement.
 
 **Table of Contents, Before**
-
-<img src="https://github.com/james-stoup/org-mode-advanced-tutorial/blob/main/images/before-pretty-css.png" alt="Table of Contents, Before" style="width:75%; height:auto;">
+![Before #1](images/before-pretty-css.png)
 
 **Text, Before**
-
-<img src="https://github.com/james-stoup/org-mode-advanced-tutorial/blob/main/images/before-example-2.png" alt="Text, Before" style="width:75%; height:auto;">
+![Before #2](images/before-example-2.png)
 
 And here is the new, prettier version.
 
 **Table of Contents, After**
-
-<img src="https://github.com/james-stoup/org-mode-advanced-tutorial/blob/main/images/after-pretty-css.png" alt="Table of Contents, After" style="width:75%; height:auto;">
+![After #1](images/after-pretty-css.png)
 
 **Text, After**
-
-<img src="https://github.com/james-stoup/org-mode-advanced-tutorial/blob/main/images/after-example-2.png" alt="Text, After" style="width:75%; height:auto;">
+![After #2](images/after-example-2.png)
 
 This can now be printed or saved as a PDF from your web browser for a quick solution.
 
 
-<a id="org82b2666"></a>
+<a id="orgc2732d5"></a>
 
 # Professional Looking PDF Exports
 
@@ -382,7 +374,7 @@ This is considerably more complex than just throwing a style sheet on your org f
 For reference, here is the PDF that I produced of [this guide](README.pdf).
 
 
-<a id="org13af1b5"></a>
+<a id="org38c539d"></a>
 
 ## Install LaTeX
 
@@ -393,7 +385,7 @@ The first thing that needs to be done is you need to install LaTeX onto your sys
 And that will pull in 7,000 packages (most of them are language packs) and most definitely install all your dependencies.
 
 
-<a id="org4938f2d"></a>
+<a id="orgd60121c"></a>
 
 ## Configure Emacs for LaTeX
 
@@ -405,7 +397,7 @@ Next we need to tell Emacs how to handle LaTeX.
     (setq org-latex-compiler "xelatex")
     (setq org-latex-pdf-process '("xelatex %f"))
     (setq org-latex-listings 't)
-
+    
     (require 'ox-latex)
     (add-to-list 'org-latex-classes
                  '("org-plain-latex"
@@ -420,7 +412,7 @@ Next we need to tell Emacs how to handle LaTeX.
                    ("\\subparagraph{%s}" . "\\subparagraph*{%s}")
                    )
                  )
-
+    
     ;; No, these are not duplicated by accident. Yes, we need both of them.
     (setq org-latex-pdf-process
           '(
@@ -433,7 +425,7 @@ Next we need to tell Emacs how to handle LaTeX.
 I'm going to be honest here, out of everything I've ever configured with Emacs, getting LaTeX working was, by far, the most challenging. Just getting the Emacs side of things was painful enough, but configuring the LaTeX setup file was an entirely new level of stress. As such, I know *that* this configuration works, but not exactly *why* every piece of it works. And by the time I got this far, I was beyond done screwing with it. So if you want a more detailed explanation regarding the inner workings of LaTeX, you will need to consult their official documentation. In which case, God be with you.
 
 
-<a id="org100fbfc"></a>
+<a id="org7e18578"></a>
 
 ## Initial Org Doc Setup
 
@@ -443,12 +435,12 @@ At the top of your org file you will need to add the `#+SETUPFILE:` keyword alon
     #+SUBTITLE: Version 1.0
     #+AUTHOR: James Stoup
     #+CREATION_DATE: <2025-01-01 Wed>
-
+    
     #+OPTIONS: toc:3 H:5
     #+SETUPFILE: ~/org/latex-pdf.setup
 
 
-<a id="orgd7ad8f0"></a>
+<a id="org692cf06"></a>
 
 ## The Latex Setup File
 
@@ -459,7 +451,7 @@ Here you go, the [LaTeX PDF setup file](latex-pdf.setup).
 Please don't ask me any questions about the syntax of this file. LaTeX made me cry. I figured it out and then promptly swore I wouldn't touch this again if the gods just got my file exporting properly. They did and so I took it and ran.
 
 
-<a id="orgfcc7e99"></a>
+<a id="orgb2dc896"></a>
 
 # Presenting with Org Mode
 
@@ -474,7 +466,7 @@ PowerPoint encourages you to **add** many things to your presentation, whether t
 That is why crafting presentations with Org Mode, in my opinion, is so much better. You already have your notes in Org Mode so you are already 90% of the way there. You can create a new org file, paste in some options, copy in your notes, and then export your presentation to your browser.
 
 
-<a id="orga302bb0"></a>
+<a id="orgbfae77f"></a>
 
 ## How This All Works
 
@@ -487,7 +479,7 @@ Before we go on I need to clarify a key point. You won't actually be using Emacs
 5.  Control the presentation from your browser, not Emacs
 
 
-<a id="org593ae4a"></a>
+<a id="orge320897"></a>
 
 ## Begun, the Reveal Wars Have!
 
@@ -503,7 +495,7 @@ So which should you use? In my configuration, I use [org-re-reveal](https://gith
 That being said, by the time you read this guide, things could have easily changed yet again. Who knows, maybe `org-re-reveal` will be old and busted and `org-re-re-reveal` will be the new hotness. Either way, because of that ambiguity I'm not including instructions here for installing the `reveal.js` library. Pick a package, install Reveal however they recommend, and then go live your best life. I'm going to provide the configuration for my setup and you can use that, or not, as you like.
 
 
-<a id="orgcc7fdec"></a>
+<a id="org09c3c05"></a>
 
 ## Org Re Reveal Configuration
 
@@ -517,7 +509,7 @@ Here it is, everything you need in your configuration file!
 Remember, you must install `reveal.js` regardless of what interface package you use.
 
 
-<a id="orgac325f5"></a>
+<a id="orge601c7c"></a>
 
 ## Creating a Basic Presentation
 
@@ -547,17 +539,17 @@ In the sample presentation file you will see the structure of how the presentati
 Now you can navigate through the presentation using only the arrow keys on your keyboard.
 
 
-<a id="org1f54eaf"></a>
+<a id="orgfaa454d"></a>
 
 # Org Roam
 
 
-<a id="org7494954"></a>
+<a id="org4ad2e72"></a>
 
 ## An Introduction To Crafting A 2nd Brain
 
 
-<a id="org607cdc3"></a>
+<a id="orgc7b3055"></a>
 
 ### What are we even talking about?
 
@@ -568,7 +560,7 @@ Further complicating things is that if you read anything about Org Roam you will
 Organizing your data like this, as it turns out, has some very useful side effects. For example, you can start with one note card and, by following the references on the back of it, find other note cards that relate to it in some way. By repeatedly following the links you can discover new ideas, find hidden connections, and organically explore the subject matter you are interested in. This concept of knowledge discovery is familiar to anyone who has gotten bored at 2am and started clicking on random links in Wikipedia. You start by reading about the history of the modern banana and two hours later you are reading about the jade trade and how critical it was to the identification of bureaucrats within the government of the Zhou dynasty. You can perhaps now see how Org Roam (a system for linking Org files) and the Zettelkasten Method (a system for linking notes) might fit together.
 
 
-<a id="orgbb3f8a9"></a>
+<a id="org99c4ae8"></a>
 
 ### Who would ever use this?
 
@@ -588,7 +580,7 @@ Who then, can most benefit from using Org Roam? Here is my suggested list of peo
 This isn't an exhaustive list by any means, but rather, these are some roles that would probably benefit from the structure that Org Roam provides. But if you aren't on this list, don't let that stop you from experimenting with Org Roam. Just be aware that you might have to work harder to make this system work for you.
 
 
-<a id="orgade6257"></a>
+<a id="org8c70234"></a>
 
 ### Real use cases
 
@@ -597,12 +589,12 @@ Org Mode is so incredibly useful because anyone can use it to record any data in
 However, writers crafting a world, researchers collecting bits of data, or managers tracking a large team all could very easily benefit from this kind of system. I bring up these examples because I want to stress that while anyone can use Org Roam, you really need to go into it with a clearly defined idea of how you are going to make it work for you.
 
 
-<a id="org6aa7b3a"></a>
+<a id="org6d62e7d"></a>
 
 ## Core Concepts Explained
 
 
-<a id="orgf562a5d"></a>
+<a id="orge3b3354"></a>
 
 ### Terminology
 
@@ -613,7 +605,7 @@ I am going to walk you through all the commands as well as the workflow Org Roam
 -   backlink
 
 
-<a id="org02b360d"></a>
+<a id="orgf56c053"></a>
 
 #### Nodes
 
@@ -624,14 +616,14 @@ Nodes are any document that you create via the Org Roam capture template. All no
     :END:
 
 
-<a id="orgd5f5e4d"></a>
+<a id="orgc9a0c8f"></a>
 
 #### Links
 
 A link is a standard Org link to an Org Roam node. You should never try to create these links manually, only create them with the `org-roam-node-insert` command. These links will be used to find nodes, populate the backlinks list, and create visualizations of your data. If you break a link then you will lose the ability to find your node.
 
 
-<a id="orgc75800e"></a>
+<a id="org0531827"></a>
 
 #### Backlinks
 
@@ -640,7 +632,7 @@ Backlinks are just a list of links reference the node you are currently on. By c
 For example, if you were on a node named "spiderman" and you brought up the backlinks, you would expect to see nodes labeled "MJ", "venom", "green goblin", and so on. As each one of those pages would link back to your original node, "spiderman". Backlinks are how you organically find patterns in your data.
 
 
-<a id="orgc011b0b"></a>
+<a id="org4407d3a"></a>
 
 ### File management
 
@@ -674,7 +666,7 @@ This isn't a problem because Org Roam has great features for finding your nodes 
 *To clarify, you can have directories with Org Roam. You can actually set specific capture templates to use different directories and then filter your search results by directory, if you implement enough custom logic. However, out of the box, it is all in one big directory.*
 
 
-<a id="orgd6f5eea"></a>
+<a id="org681bade"></a>
 
 ## Basic Configuration
 
@@ -682,7 +674,7 @@ Here is the configuration I use for Org Roam. There are two key parts. The first
 
     ;; Set the location of your org-roam directory
     (setq org-roam-directory (concat (getenv "HOME") "/org-roam/"))
-
+    
     ;; use-package configuration for Org Roam
     (use-package org-roam
       :after org
@@ -693,7 +685,7 @@ Here is the configuration I use for Org Roam. There are two key parts. The first
              ("C-c n f" . org-roam-node-find)            ;; find a node (most used command)
              ("C-c n r" . org-roam-node-random)          ;; grab random node
              ("C-c C"   . org-roam-capture)              ;; open the capture template
-
+    
              (:map org-mode-map (
                     ("C-c n a" . org-roam-alias-add)     ;; create an alias
                     ("C-c n i" . org-roam-node-insert)   ;; insert a node
@@ -704,11 +696,11 @@ Here is the configuration I use for Org Roam. There are two key parts. The first
              )
       :config
       (org-roam-setup)
-
+    
       ;; The code for enhancing the org-roam-node-display-template comes from a really wonderful
       ;; configuration from Vidianos Giannitsis on github. You can find his full config here:
       ;; https://github.com/Vidianos-Giannitsis/Dotfiles/blob/master/emacs/.emacs.d/libs/zettelkasten.org
-
+    
       ;; Calculating the backlinks count
       (cl-defmethod org-roam-node-backlinkscount ((node org-roam-node))
         (let* ((count (caar (org-roam-db-query
@@ -718,13 +710,13 @@ Here is the configuration I use for Org Roam. There are two key parts. The first
                                       :and (= type "id")]
                              (org-roam-node-id node)))))
           (format "[%d]" count)))
-
+    
       ;; Uses the previously defined functions to provide much cleaner search results
       (setq org-roam-node-display-template "${backlinkscount:3} ${tags:40}")
       )
 
 
-<a id="org2be4b24"></a>
+<a id="org5bac22f"></a>
 
 ## Basic Configuration Explained
 
@@ -735,7 +727,7 @@ The configuration above consist of two main parts, the keybindings and the displ
 **Brief Note** - For the following examples I will be using my own Org Roam files and, as you will no doubt notice, I use Org Roam primarily for keeping track of all the Dungeon and Dragons games that I play in or run. I play in several different games and I write adventures as well, so my Org Roam database is filled with monsters, characters, story lines, plot ideas, and other nonsense.
 
 
-<a id="orgdb06e94"></a>
+<a id="orgba883d2"></a>
 
 ### `C-c n f` - Find a node
 
@@ -744,15 +736,14 @@ This is my most used command, by far. When executed it will open the mini buffer
 Let's find a node. Here is what I see when I search for "silver":
 
 **Find a node**
-
-<img src="https://github.com/james-stoup/org-mode-advanced-tutorial/blob/main/images/org-roam-find-node.png" alt="Find a node" style="width:75%; height:auto;">
+![Find a node](images/org-roam-find-node.png)
 
 You can see the results narrowed and, more importantly, you can see that we are searching through not just the names, but the tags as well! This is very useful. From there we can select a file, hit return, and have it populate the buffer.
 
 But what if the node doesn't exist at all? No problem, type in the node's name, hit return, and you will be prompted to create a new node.
 
 
-<a id="org303e7a2"></a>
+<a id="orgc792b6a"></a>
 
 ### `C-c n i` - Insert a node
 
@@ -763,7 +754,7 @@ This is the primary way of linking nodes together. You insert a link into the cu
 This was lost on the when I first started using Org Roam as I was under the impression that I needed to first create a node and then insert a link to it. Thankfully you can just insert a link to a node that doesn't exist and the create dialog will pop up allowing you to fully create the node. When you have captured that node, the insert command will complete and a link to your new node will appear.
 
 
-<a id="org5e5c711"></a>
+<a id="org7f7a4c7"></a>
 
 ### `C-c C` - Open a capture template
 
@@ -780,30 +771,26 @@ The capture templates here behave a bit differently than in standard Org Mode. T
 If you invoke it via methods 1 or 2, then you need to make sure you insert a link to it in another document somewhere so that you can easily find it again. You can of course always search for it in various ways if you forget about it, but generally speaking, it is best to insert a link to it somewhere immediately upon creation so you don't get orphaned nodes.
 
 **Capture Template part 1**
-
-<img src="https://github.com/james-stoup/org-mode-advanced-tutorial/blob/main/images/org-roam-capture-template-1.png" alt="Capture Template part 1" style="width:75%; height:auto;">
+![Capture template #1](images/org-roam-capture-template-1.png)
 
 **Capture Template part 2**
-
-<img src="https://github.com/james-stoup/org-mode-advanced-tutorial/blob/main/images/org-roam-capture-template-2.png" alt="Capture Template part 2" style="width:75%; height:auto;">
+![Capture template #2](images/org-roam-capture-template-2.png)
 
 **Capture Template part 3**
+![Capture template #3](images/org-roam-capture-template-3.png)
 
-<img src="https://github.com/james-stoup/org-mode-advanced-tutorial/blob/main/images/org-roam-capture-template-3.png" alt="Capture Template part 3" style="width:75%; height:auto;">
 
-
-<a id="orge63f0e4"></a>
+<a id="org2d3529a"></a>
 
 ### `C-c n l` - Show backlinks
 
 Finally we get to see the magic of Org Roam! This command will show us every node that links to the current node. As you can see, you get the node along with where specifically it is mentioned. All helpfully put into a list in a new buffer. Selecting any of the backlinks and hitting return will take you to the node in question.
 
 **Backlinks**
+![Backlinks](images/org-roam-backlinks.png)
 
-<img src="https://github.com/james-stoup/org-mode-advanced-tutorial/blob/main/images/org-roam-backlinks.png" alt="Backlinks" style="width:75%; height:auto;">
 
-
-<a id="org65e9ec8"></a>
+<a id="orgc997194"></a>
 
 ### `C-c n t` - Add a tag to filetags, NOT a headline
 
@@ -817,7 +804,7 @@ In Org Roam you can add tags to a node, but you don't add the tags in the same w
     #+date: <2026-06-27 Sat 23:36>
 
 
-<a id="org06d8423"></a>
+<a id="org6325ec4"></a>
 
 ### `C-c n o` - Create a node at a headline
 
@@ -828,20 +815,20 @@ The reason for doing this is that you might have a bunch of ideas that you want 
     :PROPERTIES:
     :ID:       33d36555-ddb0-45f1-8a5c-ccb492b7fff6
     :END:
-
+    
     #+title: SitL Magic Items
     #+filetags: :DnD:SitL:
-
+    
     * Magic Items
     A list of all the magic items we have encountered so far.
-
+    
     ** Chalice of Purification
     :PROPERTIES:
     :ID:       1fa265a9-13cb-4b16-a7b3-c9ddee4e623d
     :END:
     - can cure poison 3 times a day
     - currently in Abel's bag of holding
-
+    
     ** Cloak of Protection
     :PROPERTIES:
     :ID:       e837a3dc-e0a3-4c18-91b5-6f5d34b5e62f
@@ -850,7 +837,7 @@ The reason for doing this is that you might have a bunch of ideas that you want 
     - gives +1 to saving throws
     - looks stylish
     - currently worn by Abel
-
+    
     ** Gloves of Thievery
     :PROPERTIES:
     :ID:       96f9961e-b1ef-4e10-9588-bb415e9127e1
@@ -865,7 +852,7 @@ Here I have a file titled `SitL Magic Items` and it is a node. I can search for 
 Generally I would advocate using this when you have small bits of data that won't change and can be easily grouped into a large node.
 
 
-<a id="org18a293f"></a>
+<a id="orgc3aa688"></a>
 
 ### `C-c n a` - Create an alias
 
@@ -881,23 +868,23 @@ As the name would suggest, this creates an alias for an existing node. There are
     - removes curses
 
 
-<a id="org70ae7ee"></a>
+<a id="org2a5d9cc"></a>
 
 ### `C-c n r` - Grab random node
 
 Finally we have the one function I have never used. However, if your collection of nodes gets sufficiently large and you want a surprise, opening a random node could be exciting. I guess.
 
 
-<a id="org416894f"></a>
+<a id="org275e2a6"></a>
 
 ## Org Roam Capture Templates
 
 I purposefully separated this out from the basic configuration section because this, while incredibly useful, is optional. It adds a bunch of complexity and if you are already unsure if you even need Org Roam, spending a bunch of time messing with capture templates will just be a waste of time. However, if you want to expand what Org Roam can do for you, then crafting your own capture templates is the next step.
 
-Hopefully you've already read the [Advanced Capture Templates](#org4d7742c) section of this guide and were suitably impressed. We are going to apply those same concepts to Org Roam. However, it isn't an exact 1:1 translation, so there are some minor things we will need to tweak. If you attempt to use the standard Org Mode syntax here, it will break your capture templates.
+Hopefully you've already read the [Advanced Capture Templates](#org7a8cb29) section of this guide and were suitably impressed. We are going to apply those same concepts to Org Roam. However, it isn't an exact 1:1 translation, so there are some minor things we will need to tweak. If you attempt to use the standard Org Mode syntax here, it will break your capture templates.
 
 
-<a id="org6101552"></a>
+<a id="org4371d84"></a>
 
 ### Capture Template Example
 
@@ -913,10 +900,10 @@ Here is a sample of some of my capture templates:
              :if-new (file+head "%<%Y%m%d%H%M%S>-${slug}.org" "#+title: ${title}\n")
              :unnarrowed t
              )
-
+    
             ;;; DND Entry Group ;;;
             ("d" "New Magic Item/NPC/Location/Quest")
-
+    
             ;; New Magic Item
             ("di" "New Magic Item"
              plain
@@ -924,7 +911,7 @@ Here is a sample of some of my capture templates:
              :if-new (file+head "dnd/items/%<%Y%m%d%H%M%S>-${slug}.org" "")
              :unnarrowed t
              )
-
+    
             ;; New Session
             ("ds" "New Session"
              plain
@@ -939,7 +926,7 @@ And here is one of the accompanying template files:
 
     #+title: ${title}
     #+filetags: :DnD:magicitem:%^G
-
+    
     * %^{item-name}
     ** Description
     %^{item-description}
@@ -953,7 +940,7 @@ Something interesting to note here is that the path to this file is:
 However, this file does not have an Org Roam ID. I created these files manually, not via the normal node creation process. Which means it will not be searchable via the Find Node function. You can obviously still open it in the regular way, but this file (and all the template files) are specifically excluded from Org Roam's system. It is not meant to be searchable data and I don't ever want to accidentally modify it.
 
 
-<a id="org97fc32d"></a>
+<a id="org05c06f7"></a>
 
 ### Default Capture Template Syntax Explained
 
@@ -1012,7 +999,7 @@ Which, once filled it with our new self defense class "Kung Fu", would produce a
 Overall this is fairly functional and easy enough to use. You could easily tweak it to include more fields or a more detailed structure. If this is all you need then go with this. But if you need something a little more detailed, then we need to step up our game.
 
 
-<a id="orgdcdfba3"></a>
+<a id="org92f790f"></a>
 
 ### Advanced Capture Template Syntax Explained
 
@@ -1025,7 +1012,7 @@ Let's take this one at a time. Here is the snippet in question.
 
     ;;; DND Entry Group ;;;
     ("d" "New Magic Item/NPC/Location/Quest")
-
+    
     ;; New Magic Item
     ("di" "New Magic Item"
      plain
@@ -1080,14 +1067,14 @@ Putting it all together, let's create a new magic item. Here is what I'm going t
 9.  Close and save the node (`C-c C-c` )
 
 
-<a id="orgc997bc7"></a>
+<a id="orgadac128"></a>
 
 ## Org Roam UI
 
 As we wrap up our exploration of Org Roam, we come to (in my opinion) the coolest part of this entire guide, visualization! With all the work we've put in to configure Org Roam and then fill it with data, we deserve this. Org Roam UI spins up a nifty little webserver and display all of your nodes in an interconnected way. You can edit everything from the browser, change the colors, play with a bunch of settings, and generally have a good time clicking around your data. This is one of my favorite Emacs packages ever created and a big shout-out goes to everyone who made [Org Roam UI](https://github.com/org-roam/org-roam-ui) because it is great.
 
 
-<a id="org3d97074"></a>
+<a id="org2b95159"></a>
 
 ### Basic Configuration
 
@@ -1095,7 +1082,7 @@ This configuration was taken, almost in its entirety, from their github page. I 
 
     (use-package websocket
       :after org-roam)
-
+    
     (use-package org-roam-ui
       :after org-roam ;; or :after org
       ;;         normally we'd recommend hooking orui after org-roam, but since org-roam does not have
@@ -1113,29 +1100,26 @@ This configuration was taken, almost in its entirety, from their github page. I 
 Check out their github page for more options, but this should do it for you. As I said, I added a shortcut to call `org-roam-ui-open` more easily, but that's it.
 
 
-<a id="orga4f4d98"></a>
+<a id="org5c7269a"></a>
 
 ### Awesome Examples
 
 **Org Roam UI Overview**
-
-<img src="https://github.com/james-stoup/org-mode-advanced-tutorial/blob/main/images/org-roam-ui-1.png" alt="Org Roam UI Overview" style="width:75%; height:auto;">
+![Org Roam UI #1](images/org-roam-ui-1.png)
 
 **Org Roam UI zoomed in**
-
-<img src="https://github.com/james-stoup/org-mode-advanced-tutorial/blob/main/images/org-roam-ui-2.png" alt="Org Roam UI zoomed in" style="width:75%; height:auto;">
+![Org Roam UI #2](images/org-roam-ui-2.png)
 
 **Org Roam UI Node selected**
+![Org Roam UI #3](images/org-roam-ui-3.png)
 
-<img src="https://github.com/james-stoup/org-mode-advanced-tutorial/blob/main/images/org-roam-ui-3.png" alt="Org Roam UI Node selected" style="width:75%; height:auto;">
-
-**Org Roam UI Node details**
-
-<img src="https://github.com/james-stoup/org-mode-advanced-tutorial/blob/main/images/org-roam-ui-4.png" alt="Org Roam UI Node details " style="width:75%; height:auto;">
+\*Org Roam UI Node details \*
+![Org Roam UI #4](images/org-roam-ui-4.png)
 
 
-<a id="org982dcbf"></a>
+<a id="orgf1a4256"></a>
 
 # Farewell
 
 I wrote this guide because I find the Org ecosystem to be incredibly useful and I wanted others to benefit from my knowledge. But as much as I've covered here today, there are many things left to discover. Lots of people are using Org Mode in new and creative ways and I encourage you to seek them out. I hope you found this guide useful. Good luck as you remake your workflows and become ever better organized.
+

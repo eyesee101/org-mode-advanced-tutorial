@@ -176,7 +176,7 @@ Here is what that template file looks like:
 
 There are three different components at work here: basic Org Mode syntax, user defined variables, and finally references to those user defined variables. Now the basic syntax you know already. The ~** TODO~, ~:PROPERTIES:~, etc. all operate as usual. However the other two are more tricky.
 
-Notice that the ~%^{title}~, ~%^{author}~, and ~source~ fields are special variables that have been defined by the user. These variables tell Org Mode to interactively ask the user for input once the capture template has been activated. Then once those variables have been capture, they can be placed within the document. In this case the ~%^{title}~ and ~%^{author}~ are both going to go into the ~:PROPERTIES~ drawer, but they are also going to be copied into the ~** TODO~ line. The first value is the title of the book followed by the author of the book, with a dash to separate them. Isn't that clever?
+Notice that the ~%^{title}~, ~%^{author}~, and ~%^{source}~ fields are special variables that have been defined by the user. These variables tell Org Mode to interactively ask the user for input once the capture template has been activated. Then once those variables have been capture, they can be placed within the document. In this case the ~%^{title}~ and ~%^{author}~ are both going to go into the ~:PROPERTIES~ drawer, but they are also going to be copied into the ~** TODO~ line. The first value is the title of the book followed by the author of the book, with a dash to separate them. Isn't that clever?
 
 *** Book Template Explained
 For clarity we are going to go through the template line by line, explaining how each piece fits as we go.
